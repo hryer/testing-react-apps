@@ -8,7 +8,8 @@ import Login from '../../components/login'
 
 test('submitting the form calls onSubmit with username and password', () => {
   let submittedData;
-  const handleSubmit = data => (submittedData = data) 
+  // const handleSubmit = data => (submittedData = data) 
+  const handleSubmit = jest.fn()
 
   render(<Login onSubmit={handleSubmit} />)
 
@@ -26,10 +27,14 @@ test('submitting the form calls onSubmit with username and password', () => {
   const submitElements = screen.getByRole('button',{name: /submit/i})
   userEvent.click(submitElements)
 
-  expect(submittedData).toEqual({
-    username: testCase.username,
-    password: testCase.password
-  })
+  // expect(submittedData).toEqual({
+  //   username: testCase.username,
+  //   password: testCase.password
+  // })
+
+  expect(handleSubmit).toHaveBeenCalledWith(testCase)
+  expect(handleSubmit).toHaveBeenCalledTimes(1)
+  
   // assert that submittedData is correct
   // 💰 use `toEqual` from Jest: 📜 https://jestjs.io/docs/en/expect#toequalvalue
 })
