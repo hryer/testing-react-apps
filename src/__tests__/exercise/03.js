@@ -1,7 +1,7 @@
 // Avoid implementation details
 // http://localhost:3000/counter
 
-import React from 'react'
+import * as React from 'react'
 // 🐨 add `screen` to the import here:
 import {render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'

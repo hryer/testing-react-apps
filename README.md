@@ -21,7 +21,7 @@
 
 <!-- prettier-ignore-start -->
 [![Build Status][build-badge]][build]
-[![AppVeyor Build Status][win-build-badge]][win-build]
+[![All Contributors][all-contributors-badge]](#contributors)
 [![GPL 3.0 License][license-badge]][license]
 [![Code of Conduct][coc-badge]][coc]
 <!-- prettier-ignore-end -->
@@ -36,7 +36,7 @@
 ## System Requirements
 
 - [git][git] v2.13 or greater
-- [NodeJS][node] `^10.13 || 12 || 14`
+- [NodeJS][node] `^10.13 || >=12`
 - [npm][npm] v6 or greater
 
 All of these must be available in your `PATH`. To verify things are set up
@@ -75,6 +75,21 @@ If you get any errors, please read through them and see if you can find out what
 the problem is. If you can't work it out on your own then please [file an
 issue][issue] and provide _all_ the output from the commands you ran (even if
 it's a lot).
+
+If you can't get the setup script to work, then just make sure you have the
+right versions of the requirements listed above, and run the following commands:
+
+```
+npm install
+npm run validate
+```
+
+If you are still unable to fix issues and you know how to use Docker 🐳 you can
+setup the project with the following command:
+
+```
+docker-compose up
+```
 
 It's recommended you run everything locally in the same environment you work in
 every day, but if you're having issues getting things set up, you can also set
@@ -131,7 +146,7 @@ emoji characters are here to help you.
 
 - **Kody the Koala** 🐨 will tell you when there's something specific you should
   do
-- **Matthew the Muscle** 💪 will indicate what you're working with an exercise
+- **Matthew the Muscle** 💪 will indicate that you're working with an exercise
 - **Chuck the Checkered Flag** 🏁 will indicate that you're working with a final
   version
 - **Marty the Money Bag** 💰 will give you specific tips (and sometimes code)
@@ -167,12 +182,23 @@ Thanks goes to these wonderful people
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/milamer"><img src="https://avatars2.githubusercontent.com/u/12884134?v=4" width="100px;" alt=""/><br /><sub><b>Christian Schurr</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=milamer" title="Code">💻</a> <a href="https://github.com/kentcdodds/testing-react-apps/commits?author=milamer" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/tiodan81"><img src="https://avatars2.githubusercontent.com/u/13711104?v=4" width="100px;" alt=""/><br /><sub><b>Dan Schwartz</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=tiodan81" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://wbeuil.com"><img src="https://avatars1.githubusercontent.com/u/8110579?v=4" width="100px;" alt=""/><br /><sub><b>William BEUIL</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=wbeuil" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://vk.com/vasilii_kovalev"><img src="https://avatars0.githubusercontent.com/u/10310491?v=4" width="100px;" alt=""/><br /><sub><b>Vasilii Kovalev</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/issues?q=author%3Avasilii-kovalev" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/RobbertWolfs"><img src="https://avatars2.githubusercontent.com/u/12511178?v=4" width="100px;" alt=""/><br /><sub><b>Robbert Wolfs</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/issues?q=author%3ARobbertWolfs" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://twitter.com/peramanathan"><img src="https://avatars2.githubusercontent.com/u/9104920?v=4" width="100px;" alt=""/><br /><sub><b>Peramanathan Sathyamoorthy</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=p10ns11y" title="Tests">⚠️</a> <a href="https://github.com/kentcdodds/testing-react-apps/commits?author=p10ns11y" title="Code">💻</a></td>
+    <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt=""/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=MichaelDeBoey" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://bartwijnants.be/"><img src="https://avatars1.githubusercontent.com/u/822859?v=4" width="100px;" alt=""/><br /><sub><b>Bart Wijnants</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=bartw" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.daleseo.com"><img src="https://avatars1.githubusercontent.com/u/5466341?v=4" width="100px;" alt=""/><br /><sub><b>Dale Seo</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=DaleSeo" title="Code">💻</a> <a href="https://github.com/kentcdodds/testing-react-apps/commits?author=DaleSeo" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/falldowngoboone"><img src="https://avatars0.githubusercontent.com/u/3603771?v=4" width="100px;" alt=""/><br /><sub><b>Ryan Boone</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=falldowngoboone" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://bobowen.tech"><img src="https://avatars3.githubusercontent.com/u/603731?v=4" width="100px;" alt=""/><br /><sub><b>Bob Owen</b></sub></a><br /><a href="https://github.com/kentcdodds/testing-react-apps/commits?author=onetruebob" title="Code">💻</a> <a href="https://github.com/kentcdodds/testing-react-apps/commits?author=onetruebob" title="Documentation">📖</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
@@ -191,17 +217,16 @@ Thank you! https://kcd.im/tra-ws-feedback
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
-[build-badge]: https://img.shields.io/travis/kentcdodds/testing-react-apps.svg?style=flat-square&logo=travis
-[build]: https://travis-ci.com/kentcdodds/testing-react-apps
+[build-badge]: https://img.shields.io/github/workflow/status/kentcdodds/testing-react-apps/validate/main?logo=github&style=flat-square
+[build]: https://github.com/kentcdodds/testing-react-apps/actions?query=workflow%3Avalidate
 [license-badge]: https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square
 [license]: https://github.com/kentcdodds/testing-react-apps/blob/main/LICENSE
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
 [coc]: https://github.com/kentcdodds/testing-react-apps/blob/main/CODE_OF_CONDUCT.md
 [emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
 [all-contributors]: https://github.com/kentcdodds/all-contributors
+[all-contributors-badge]: https://img.shields.io/github/all-contributors/kentcdodds/testing-react-apps?color=orange&style=flat-square
 [win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
 [issue]: https://github.com/kentcdodds/testing-react-apps/issues/new
-[win-build-badge]: https://img.shields.io/appveyor/ci/kentcdodds/testing-react-apps.svg?style=flat-square&logo=appveyor
-[win-build]: https://ci.appveyor.com/project/kentcdodds/testing-react-apps
 <!-- prettier-ignore-end -->
